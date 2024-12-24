@@ -27,11 +27,11 @@ namespace CppCLRWinFormsProject {
         // 3. Конструктор
         Form1(void)
         {
-            InitializeComponent(); // Инициализация компонентов формы
-            CreateMenu(); // Создание главного меню
-            CreateGamePanel(); // Создание игровой панели
-            SubscribeToTextChangedEvents(); // Подписка на события изменения текста
-            SubscribeToKeyDownEvents(); // Подписка на события нажатия клавиш
+            //InitializeComponent(); // Инициализация компонентов формы
+            //CreateMenu(); // Создание главного меню
+            //CreateGamePanel(); // Создание игровой панели
+            //SubscribeToTextChangedEvents(); // Подписка на события изменения текста
+            //SubscribeToKeyDownEvents(); // Подписка на события нажатия клавиш
             InitializeWords(); // Инициализация списка слов
         }
 
@@ -64,3 +64,5 @@ namespace CppCLRWinFormsProject {
             int index = rand->Next(wordsToGuess->Count);
             correctWord = wordsToGuess[index]; // Установка правильного слова
         }
+    };
+}
